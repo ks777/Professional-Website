@@ -1,0 +1,39 @@
+<html lang = 'en' xmins = "http://www.w3.org/1999/xhtml" style="width = auto;">
+<meta http-equiv ="Content-type" content="text/html" charset= "utf-8">
+<link rel="stylesheet" href="technical.css">
+
+<body onload="myFunct()" style="margin:0;">
+<div class = "fadeout">
+<div id="wrap">
+  <div id="border">
+    <div id="white">
+      <div id="line">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class = "main" style="display:none;" id="myDiv" >
+  <h2>YES</h2>
+  <p>Mock words/wanna see this after the loader fades out</p>
+</div>
+
+<script>
+var myVar;
+
+function myFunct() {
+    myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  //document.getElementById("line").style.display = "none";
+  //document.getElementById("white").style.display = "none";
+  //document.getElementById("border").style.display = "none";
+  //document.getElementById("wrap").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+</script>
+</body>
+</html>

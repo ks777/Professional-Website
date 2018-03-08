@@ -1,0 +1,94 @@
+html, body{
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+
+#wrap{
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#border{
+  border: 3px solid #222;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: -50%;
+  top: -50%;
+  padding: 4px 3px;
+}
+
+#white{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+#line{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  -webkit-animation: slide 2s steps(80) infinite;
+  -moz-animation: slide 2s steps(80) infinite;
+  animation: slide 2s steps(80) infinite;
+}
+
+@keyframes slide{
+  0%{
+    left: -100%;
+  }
+  
+  100%{
+    left: 100%;
+  }
+}
+
+@-moz-keyframes slide{
+  0%{
+    left: -100%;
+  }
+  
+  100%{
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes slide{
+  0%{
+    left: -100%;
+  }
+  
+  100%{
+    left: 100%;
+  }
+}
+  
+#myDiv{
+  display: none;
+  text-align: center;
+}
+
+.fadeout {
+	opacity: 0;
+	-webkit-animation: fadeout 3s;
+	-moz-animation: fadeout 3s;
+	animation: fadeout 3s;
+}
+
+@keyframes fadeout{
+	from{
+		opacity:1;
+	}
+		
+	to	{
+		opacity:0;
+	}
+}
