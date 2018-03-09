@@ -4,6 +4,11 @@ html, body{
   position: relative;
 }
 
+h1{
+	align: center;
+}
+
+
 #wrap{
   width: 200px;
   height: 20px;
@@ -36,38 +41,44 @@ html, body{
   height: 100%;
   width: 100%;
   background-color: black;
-  -webkit-animation: slide 2s steps(80) infinite;
-  -moz-animation: slide 2s steps(80) infinite;
-  animation: slide 2s steps(80) infinite;
+  -webkit-animation: slide 3s steps(80) infinite;
+  -moz-animation: slide 3s steps(80) infinite;
+  animation: slide 3s steps(80) infinite;
 }
 
 @keyframes slide{
   0%{
     left: -100%;
+	opacity:0;
   }
   
   100%{
     left: 100%;
+	opacity:1;
   }
 }
 
 @-moz-keyframes slide{
   0%{
     left: -100%;
+	opacity:0;
   }
   
   100%{
     left: 100%;
+	opacity:1;
   }
 }
 
 @-webkit-keyframes slide{
   0%{
     left: -100%;
+	opacity:0;
   }
   
   100%{
     left: 100%;
+	opacity:1;
   }
 }
   
@@ -78,17 +89,15 @@ html, body{
 
 .fadeout {
 	opacity: 0;
-	-webkit-animation: fadeout 3s;
-	-moz-animation: fadeout 3s;
-	animation: fadeout 3s;
+	-webkit-animation: fadeout 5s;
+	-moz-animation: fadeout 5s;
+	animation: fadeout 5s;
 }
 
 @keyframes fadeout{
-	from{
-		opacity:1;
-	}
-		
-	to	{
-		opacity:0;
-	}
+	0%{opacity:1;}
+	66%{opacity:1;}
+	100%{opacity:0;}
 }
+}
+
