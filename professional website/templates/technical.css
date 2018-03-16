@@ -35,8 +35,32 @@ h2{
 	opacity: 1;
 	text-align: justify;
 	font-weight: 900;
+	font-size: 100px;
+	font-family: 'Roboto';
 }
 
+.yo{
+  left: 2.5rem;
+  top: 5rem;
+  animation-name: topFadeOut;
+  animation-duration: 5s;
+  color: white;
+	
+}
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  100% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+}
 
 #wrap{
   width: 200px;
@@ -212,7 +236,7 @@ h2{
     animation: move_wave 10s linear infinite;
 }
 .waveBottom {
-    background-size: 50% 100px;
+    background-size: 50% 150px;
 }
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
