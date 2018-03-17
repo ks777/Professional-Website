@@ -40,8 +40,9 @@ h2{
 }
 
 .yo{
-  left: 2.5rem;
-  top: 5rem;
+  position: absolute;
+  left: 7.5rem;
+  top: 15rem;
   animation-name: topFadeOut;
   animation-duration: 5s;
   color: white;
@@ -51,13 +52,13 @@ h2{
 @keyframes topFadeOut {
   0% {
     position: absolute;
-    top: -3rem;
+    top: 10rem;
     opacity: 0;
   }
 
   100% {
     position: absolute;
-    top: 25%;
+    top: 15rem;
     opacity: 1;
   }
 }
