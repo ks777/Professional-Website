@@ -4,10 +4,13 @@ html, body{
   position: relative;
   animation: loading_color 4.5s linear;
   background-color: white;
-}
+  background: #c33764;
+  background: -webkit-linear-gradient(to top, #c33764, #1d2671); 
+  background: linear-gradient(to top, #c33764, #1d2671);  
+ }
 
 body{
-	background-image: linear-gradient(to top, #33C1FF 20%, #C433FF 80%);
+	background: linear-gradient(to top, #c33764, #1d2671);
 	background-position: fixed;
 	-webkit-animation:fadein 4.6s linear;
 	-moz-animation:fadein 4.6s linear;
@@ -16,13 +19,13 @@ body{
 
 @keyframes loading_color{
   0% {
-    background: #C433FF;
+    background: #1d2671;
   }
   50% {
-    background: #33C1FF;
+    background: #a55d8d;
   }
   100% {
-    background: #C433FF;
+    background: #c33764;
   }
 }
 
@@ -33,7 +36,14 @@ h1{
 h2{
 	align: center;
 	opacity: 1;
-	text-align: justify;
+	font-weight: 900;
+	font-size: 100px;
+	font-family: 'Roboto';
+}
+
+h3{
+	align: center;
+	opacity: 1;
 	font-weight: 900;
 	font-size: 100px;
 	font-family: 'Roboto';
@@ -46,8 +56,20 @@ h2{
   animation-name: topFadeOut;
   animation-duration: 5s;
   color: white;
+  margin: 0 0 40px 0;
+}
+
+.man{
+  position: absolute;
+  left: 7.5rem;
+  top: 15rem;
+  animation-name: topFadeOut;
+  animation-duration: 5s;
+  color: white;
+  
 	
 }
+
 
 @keyframes topFadeOut {
   0% {
@@ -242,7 +264,6 @@ h2{
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
 }
-
 
 
 
