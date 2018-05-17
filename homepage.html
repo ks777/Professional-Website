@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang = 'en' xmins = "http://www.w3.org/1999/xhtml" style="width = auto;">
+<meta http-equiv ="Content-type" content="text/html" charset= "utf-8">
+<link rel="stylesheet" href="technical.css">
+
+<body onload="myFunct()" style="margin:0;">
+<div class = "disappear">
+	<div class = "loading_color">
+		<div id="wrap">
+			<div id="border">
+				<div id="white">
+					<div id="line">
+					</div>
+				</div>
+			<div style = "text-align: center; font-family:sans-serif, helvetica, serif; font-size: 15px; font-weight: bold;">
+				<h1>Loading</h1>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class = "main" style="display:none;" id="myDiv" >
+<div class = "reappear">
+
+	<div class="waveWrapper waveAnimation">
+		<div class="waveWrapperInner bgTop">
+			<div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')">
+			
+			</div>
+		</div>
+		<div class="waveWrapperInner bgMiddle">
+			<div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')">
+			
+			</div>
+		</div>
+		<div class="waveWrapperInner bgBottom">
+			<div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')">
+			
+			</div>
+		</div>
+		<h2 class = "yo"><p>Kevin Sandoval</p></h2>
+		<h3 class = "man"><p>Freelance Software/Web Developer</p></h3>
+		<img src = "right-bracket.png"> 
+	</div>
+</div>
+</div>
+
+
+
+<script>
+var myVar;
+
+function myFunct() {
+    myVar = setTimeout(showPage, 4500);
+}
+
+function showPage() {
+  //document.getElementById("line").style.display = "none";
+  //document.getElementById("white").style.display = "none";
+  //document.getElementById("border").style.display = "none";
+  //document.getElementById("wrap").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+</script>
+
+</body>
+</html>
