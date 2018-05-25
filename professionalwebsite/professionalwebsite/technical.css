@@ -4,19 +4,21 @@ html, body{
   position: relative;
   animation: loading_color 4.5s linear;
   background-color: white;
-  background: #c33764;
-  background: -webkit-linear-gradient(to top, #c33764, #1d2671); 
-  background: linear-gradient(to top, #c33764, #1d2671);
+  z-index: 1;
+  
  }
 
 body{
-	background: linear-gradient(to top, #c33764, #1d2671);
 	background-position: fixed;
 	-webkit-animation:fadein 4.6s linear;
 	-moz-animation:fadein 4.6s linear;
 	animation:fadein 4.6s linear;
-	font-size: 55px;
+	font-size: 55px;  
+	background: -webkit-linear-gradient(to top, #c33764, #1d2671); 
+    background: linear-gradient(to top, #c33764, #1d2671);
+	background: -moz-linear-gradient(to top, #c33764, #1d2671);   
 }
+
 
 @keyframes loading_color{
   0% {
@@ -30,28 +32,86 @@ body{
   }
 }
 
-h1{
-	align: center;
-}
 
 h2{
-	text-align: center;
+	position: absolute;
 	opacity: 1;
 	font-weight: 900;
 	font-family:'Avenir Next',Ubuntu,sans-serif;
 }
 
 h3{
-	text-align: center;
+	position: absolute;
 	opacity: 1;
 	font-weight: 900;
 	font-family:'Avenir Next',Ubuntu,sans-serif;
 	margin-top: 40px;
 }
 
+h4{
+	margin: -250px 0 10px 5px;
+}
+
+h5{
+	opacity: 1;
+	text-align: center;
+	font-family:'Avenir Next',Ubuntu,sans-serif;
+	margin: 460px 0 0 0;
+	overflow-x: auto;
+	background: #FFFFFF;
+	position: relative;
+}
+h6{
+	opacity: 1;
+	text-align: center;
+	font-family:'Avenir Next',Ubuntu,sans-serif;
+	overflow-x: auto;
+	background: #FFFFFF;
+	position: relative;
+	font-size: 20px;
+	margin: -15px 400px 40px 400px;
+}
+
+h7{
+	
+}
+
+.link1{
+	margin: 25px 0 0 0;	
+	font-family: Helvetica, 'Avenir Next', Ubuntu,sans-serif;
+	font-size: 24px;
+	color: white;	
+	text-align: left;
+	display: inline;
+}
+
+.link2{
+	margin: 20px 0 0 85px;
+	font-family: Helvetica, 'Avenir Next', Ubuntu,sans-serif;
+	font-size: 24px;
+	color: white;	
+	text-align: left;
+	display: inline;
+}
+
+.link3{
+	margin: 20px 0 0 85px;
+	font-family: Helvetica, 'Avenir Next', Ubuntu,sans-serif;
+	font-size: 24px;
+	color: white;	
+	text-align: left;
+	display: inline;
+}
+
+.container{
+	width: 50%;
+	height: 50%;
+	margin: 0px 450px 0px 450px;
+}
+
 .yo{
   position: absolute;
-  left: 1.5rem;
+  left: -2rem;
   top: 15rem;
   right: -2.0rem;
   margin: -120px 0 0 0;
@@ -63,7 +123,7 @@ h3{
 
 .man{
   position: absolute;
-  left: 1.5rem;
+  left: -2rem;
   top: 15rem;
   right: -2.0rem;
   animation-name: topFadeOut;
@@ -75,13 +135,13 @@ h3{
 
 
 @keyframes topFadeOut {
-  0% {
+  from {
     position: absolute;
     top: 10rem;
     opacity: 0;
   }
 
-  100% {
+  to {
     position: absolute;
     top: 15rem;
     opacity: 1;
@@ -107,7 +167,6 @@ h3{
 }
 
 #white{
-  overflow: hidden;
   height: 100%;
   width: 100%;
   margin: 0 auto;
@@ -162,8 +221,8 @@ h3{
 }
   
 #myDiv{
-  display: none;
   text-align: center;
+  display: block;
 }
 
 .disappear{
@@ -180,10 +239,18 @@ h3{
 	100%{opacity:0;}
 }
 
-.reappear{
+.reappear, .link1, .link2, .link3{
 	-webkit-animation: fadein 3s;
 	-moz-animation: fadein 3s;
 	animation: fadein 3s;
+
+}
+
+.reappear2{
+	animation-delay: 3s;
+	-webkit-animation: fadein 2s;
+	-moz-animation: fadein 2s;
+	animation: fadein 2s;
 }
 
 @keyframes fadein{
@@ -211,15 +278,7 @@ h3{
         transform: translateX(-50%) translateZ(0) scaleY(1)
     }
 }
-.waveWrapper {
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-}
+
 .waveWrapperInner {
     position: absolute;
     width: 100%;
@@ -227,12 +286,10 @@ h3{
     height: 100%;
 }
 .bgTop {
-    z-index: 15;
-    opacity: 0.5;
+    z-index: 2;
 }
 .bgMiddle {
     z-index: 10;
-    opacity: 0.75;
 }
 .bgBottom {
     z-index: 5;
@@ -248,28 +305,96 @@ h3{
 }
 .waveTop {
     background-size: 50% 100px;
+	margin: -270px 0 0 0;
 }
 .waveAnimation .waveTop {
-  animation: move-wave 3s;
-   -webkit-animation: move-wave 3s;
-   -webkit-animation-delay: 1s;
-   animation-delay: 1s;
+	animation: move_wave 12s linear infinite;
+	-webkit-animation: move_wave 12s linear infinite;
 }
 .waveMiddle {
     background-size: 50% 120px;
+	margin: -270px 0 0 0;
 }
 .waveAnimation .waveMiddle {
     animation: move_wave 10s linear infinite;
+	-webkit-animation: move_wave 10s linear infinite;
 }
 .waveBottom {
     background-size: 50% 150px;
+	margin: -270px 0 0 0;
 }
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
+	-webkit-animation: move_wave 10s linear infinite;
+	-moz-animation: move_wave 10s linear infinite;
 }
 
 
+.sun {
+  background-color: rgba(255, 255, 51, 1);
+  opacity: 0.3;
+  border-radius: 100000px;
+  position: absolute;
+  top: calc(75% - 25px);
+  left: calc(43% - 35px);
+  width: 350px;
+  height: 350px;
+  animation: pulse 10s ease-in infinite;
+  -webkit-animation: pulse 10s ease-in infinite;
+}
 
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0px #FFCC00;
+  }
+  
+  25% {
+    box-shadow: 0px 0px 100px #FF4D00;
+  }
+}
+
+
+#stars {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin-bottom: 10px;
+}
+
+#stars div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+	top: -45px;
+	z-index: -1;
+}
+
+#stars .large {
+    background: url('///C:/Users/Kevsan/Desktop/professionalwebsite/stars_large.png');
+}
+
+#stars .medium {
+    background: url('///C:/Users/Kevsan/Desktop/professionalwebsite/stars_medium.png');
+}
+
+#stars .small {
+    background: url('///C:/Users/Kevsan/Desktop/professionalwebsite/stars_small.png');
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
 
 
 

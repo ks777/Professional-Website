@@ -1,9 +1,43 @@
 <!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<!-- saved from url=(0016)http://localhost -->
 <html lang = 'en' xmins = "http://www.w3.org/1999/xhtml" style="width = auto;">
-<meta http-equiv ="Content-type" content="text/html" charset= "utf-8">
+<meta http-equiv ="Content-type" content="text/html" charset= "text/html;charset=utf-8">
 <link rel="stylesheet" href="technical.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<body onload="myFunct()" style="margin:0;">
+<header>
+<script>
+var myVar;
+
+function myFunct() {
+    myVar = setTimeout(showPage, 4500);
+}
+
+function showPage() {
+  document.getElementById("myDiv").style.display = "block";
+}
+
+$(document).ready(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
+</script>
+</header>
+<body onload = "myFunct()" style="margin:0">
 <div class = "disappear">
 	<div class = "loading_color">
 		<div id="wrap">
@@ -20,51 +54,102 @@
 	</div>
 </div>
 
-
-<div class = "main" style="display:none;" id="myDiv" >
+<div style="display:none;" id="myDiv" >
 <div class = "reappear">
+<a style = "color: white" href="#section1"><h7 class = "link1">About</h7></a>
+<a style = "color: white" href="#section2"><h7 class = "link2">Projects</h7></a>
+<a style = "color: white" href="#section3"><h7 class = "link3">Contact</h7></a>
 
-	<div class="waveWrapper waveAnimation">
-		<div class="waveWrapperInner bgTop">
-			<div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')">
+	<div id = "stars">
+		<div class="large"></div>
+		<div class="medium"></div>
+		<div class="small"></div>
+	</div>
+
+	<div class=" waveAnimation">
+		<div class="waveWrapperInner bgTop" style="position: absolute">
+			<div class="wave waveTop" style="background-image: url('///C:/Users/Kevsan/Desktop/professionalwebsite/wavetop.png')">
 			
 			</div>
 		</div>
 		<div class="waveWrapperInner bgMiddle">
-			<div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')">
+			<div class="wave waveMiddle" style="background-image: url('///C:/Users/Kevsan/Desktop/professionalwebsite/wavemid.png')">
 			
 			</div>
 		</div>
 		<div class="waveWrapperInner bgBottom">
-			<div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')">
+			<div class="wave waveBottom" style="background-image: url('///C:/Users/Kevsan/Desktop/professionalwebsite/wavebot.png')">
 			
 			</div>
 		</div>
-		<h2 class = "yo"><p>Kevin Sandoval</p></h2>
-		<h3 class = "man"><p>Freelance Software/Web Developer</p></h3>
-		<img src = "right-bracket.png"> 
+	
+	
+		<h2 class = "yo" ><p align = "center">Kevin Sandoval</p></h2>
+		<h3 class = "man"><p align = "center">Freelance Software/Web Developer</p></h3>
+		<div class = "reappear2">
+		<h4>
+			<img src = "///C:/Users/Kevsan/Desktop/professionalwebsite/rightbracket.png"/>
+		</h4>
+		</div>
+		
+		<div class="sun">  
+		</div>	
 	</div>
+
 </div>
+<a id = "section1"></a>
+<h5 class = "about">
+	<p align = "center">About Me</p>
+</h5>
+
+<h6>
+	<p align = "center">
+		I`m an aspiring back-end developer who has a habit of making creatively, wierd applications.
+		Speaking of habits, I tend to try to branch out of my comfort zone and randomly spend a couple of weeks learning a new language. Hey, that`s how i picked up Python and Front-End Development. 
+	</p>
+	<p align = "center">
+		My hopes are to create rich and provocative user experiences, while highly emphasizing a "fun" aspect to all my work. 
+		I also yearn to take my passion for videogames and one day create a gaming company from scratch and publish a myriad of fun gaming titles.
+	</p>
+	<p align = "center">
+		When I`m not learning the new or tinkering with the old, I`m usually found playing Magic the Gathering at my local card shop, attempting to make chiptunes, and/or dabbling in game development.
+	</p>
+	
+	<p align = "center">
+		Currently: Gaining experience through freelance web development assignments/ personal website-oriented projects.
+	</p>
+</h6>
+<div class = "container">
+	<img src="///C:/Users/Kevsan/Desktop/professionalwebsite/sepwave.png">
 </div>
 
+<a id = "section2"></a>
+<h5 class = "projects">
+	<p align = center">Projects</p>
+</h5>
+<h6>
+	<p align = "center">
+	</p>
+</h6>
+
+<div class = "container">
+	<img src="///C:/Users/Kevsan/Desktop/professionalwebsite/sepwave.png">
+</div>
+
+<h5 class = "contact">
+	<p align = "center">Contact</p>
+</h5>
+<a id = "section3"></a>
+<h6>
+	<p align = "center">
+		You can always contact me at<br>
+	</p>
+	<p align = "center">
+		You can see more of my work on<br>
+	</p>
+<h6>
 
 
-<script>
-var myVar;
-
-function myFunct() {
-    myVar = setTimeout(showPage, 4500);
-}
-
-function showPage() {
-  //document.getElementById("line").style.display = "none";
-  //document.getElementById("white").style.display = "none";
-  //document.getElementById("border").style.display = "none";
-  //document.getElementById("wrap").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-
-</script>
 
 </body>
 </html>
