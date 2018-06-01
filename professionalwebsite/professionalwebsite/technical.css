@@ -5,7 +5,6 @@ html, body{
   animation: loading_color 4.5s linear;
   background-color: #FFFFFF;
   z-index: 1;
-  
  }
 
 body{
@@ -16,8 +15,15 @@ body{
 	font-size: 55px;  
 	background: -webkit-linear-gradient(to top, #c33764, #1d2671); 
     background: linear-gradient(to top, #c33764, #1d2671);
-	background: -moz-linear-gradient(to top, #c33764, #1d2671);   
+	background: -moz-linear-gradient(to top, #c33764, #1d2671);  
 }
+
+.show{
+
+	background-color: #c33764;
+
+}
+
 
 @keyframes loading_color{
   0% {
@@ -80,7 +86,6 @@ h8{
 	opacity: 1;
 	text-align: center;
 	font-family:'Avenir Next',Ubuntu,sans-serif;
-	margin: 0 0 0 0;
 	overflow-x: auto;
 	background: #ffffff;
 	position: relative;
@@ -124,9 +129,9 @@ h8{
 
 .yo{
   position: absolute;
-  left: -2rem;
+  left: 50px;
   top: 15rem;
-  right: -2.0rem;
+  right: 50px;
   margin: -120px 0 0 0;
   animation-name: topFadeOut;
   animation-duration: 5s;
@@ -136,9 +141,9 @@ h8{
 
 .man{
   position: absolute;
-  left: -2rem;
+  left: 50px;
   top: 15rem;
-  right: -2.0rem;
+  right: 50px;
   animation-name: topFadeOut;
   animation-duration: 5s;
   color: white;
@@ -417,6 +422,8 @@ display: none;
 	color: #1d2671;
 	text-decoration: underline;
 }
+
+
 
 
 
