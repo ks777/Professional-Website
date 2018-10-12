@@ -124,7 +124,7 @@ h8{
 .container{
 	width: 50%;
 	height: 50%;
-	margin: 0px 450px 0px 450px;
+	margin: 0px 500px 0px 450px;
 }
 
 .yo{
@@ -323,7 +323,7 @@ h8{
 }
 .waveTop {
     background-size: 50% 100px;
-	margin: -270px 0 0 0;
+	margin: -255px 0 0 0;
 }
 .waveAnimation .waveTop {
 	animation: move_wave 12s linear infinite;
@@ -331,7 +331,7 @@ h8{
 }
 .waveMiddle {
     background-size: 50% 120px;
-	margin: -270px 0 0 0;
+	margin: -255px 0 0 0;
 }
 .waveAnimation .waveMiddle {
     animation: move_wave 10s linear infinite;
@@ -339,7 +339,7 @@ h8{
 }
 .waveBottom {
     background-size: 50% 150px;
-	margin: -270px 0 0 0;
+	margin: -255px 0 0 0;
 }
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
